@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/Portfolio.css" />
+    <script src="js/Portfolio.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="menuLeft">
+        <span class="pro"><img src="img/profile.png" alt="" /></span>
+        <button class="por" onclick="openProfile()">Portfolio</button>
+        <button class="dockBtn" onclick="openFinder()">
+          <span>Finder</span>
+        </button>
+        <button class="dockBtn">
+          <a href="https://spangle-bear-31f.notion.site/Min-s-Portfolio-2c0a7e49094080ca9996d7dede79c3c4?source=copy_link" target="_blank"><span>Notion</span></a>
+        </button>
+        <button class="dockBtn" onclick="openImageModal()">
+          <span>Image</span>
+        </button>
+      </div>
+      <div class="menuRight">
+        <span><img src="img/icons/ri_wifi-line.png" alt="" /></span>
+        <div class="battery">
+          <span>28%</span>
+          <span><img src="img/icons/battery-charge.png" alt="" /></span>
+        </div>
+        <div class="menu-right" id="dateTime"></div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <main>
+      <span>Designer/Publisher</span>
+      <span>kim min</span>
+    </main>
+    <!-- main -->
+
+    <div class="note">
+      <div class="noteHeader">
+        <span class="dots">
+          <span class="red"></span>
+          <span class="yellow"></span>
+          <span class="green"></span>
+        </span>
+        <p>min’s skill note</p>
+      </div>
+      <div class="noteCont">
+        <img src="img/icons/html.svg" alt="" />
+        <img src="img/icons/css.svg" alt="" />
+        <img src="img/icons/photoshop.svg" alt="" />
+        <img src="img/icons/illust.svg" alt="" />
+        <img src="img/icons/figma.svg" alt="" />
+        <p class="small">* 경험에 기반해서 계속 확장 중입니다!</p>
+      </div>
+    </div>
+    <!-- note -->
+
+    <!-- Finder Modal -->
+    <div id="finder-modal" class="finderModal">
+      <div class="finderWindow">
+        <div class="finderHeader">
+          <div class="macBtns">
+            <span class="red" onclick="closeFinder()"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <p>Project</p>
+        </div>
+        <div class="finderBody">
+          <aside class="finderSidebar">
+            <h4>Clone</h4>
+            <button class="active">
+              <img src="img/icons/gong_logo_icon.png" />Gongcha
+            </button>
+            <h4>Re-design</h4>
+            <button><img src="img/icons/non_logo_icon.png" />Nonfiction</button>
+            <button><img src="img/icons/vogue_logo_icon.png" />Vogue</button>
+            <h4>Team-project</h4>
+            <button><img src="img/icons/favicon_star.png" />Retro</button>
+          </aside>
+
+          <div class="finderContent">
+            <div class="tabContent active" id="gongcha">
+              <div class="projectWrapper">
+                <div class="projectImg">
+                  <img src="img/gongcha_main.png" />
+                </div>
+                <div class="projectInfo">
+                  <ul class="projectDesc">
+                    <li>• 클론코딩 프로젝트입니다.</li>
+                    <li>
+                      • 원본 사이트의 UI와 흐름을 동일하게 재현하는 데
+                      집중했습니다.
+                    </li>
+                    <li>• Swiper / Modal / Tab 구현</li>
+                  </ul>
+                  <div class="btnGroup">
+                    <a
+                      href="https://kimmin-dot.github.io/gongcha/"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Website</a
+                    >
+                    <a
+                      href="https://www.gong-cha.co.kr/brand"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Original</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabContent" id="nonfiction">
+              <div class="projectWrapper">
+                <div class="projectImg">
+                  <img src="img/non_main.jpg" />
+                </div>
+                <div class="projectInfo">
+                  <ul class="projectDesc">
+                    <li>• 리디자인 프로젝트입니다.</li>
+                    <li>
+                      • 브랜드의 차분하고 감성적인 무드를 중심으로 전체 스타일을
+                      재해석했습니다.
+                    </li>
+                    <li>
+                      • 미니멀하고 무드 중심의 브랜드 감성을 UI에 자연스럽게
+                      녹여냈습니다.
+                    </li>
+                  </ul>
+                  <div class="btnGroup">
+                    <a
+                      href="https://kimmin-dot.github.io/nonfiction/"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Website</a
+                    >
+                    <a href="https://www.figma.com/design/qOhInlFdSerrqFlVJIWVN1/nonfiction?node-id=0-1&p=f&t=idvj3x7ost92yn3w-0" class="viewBtn" target="_blank"
+                      >View Figma</a
+                    >
+                    <a
+                      href="https://nonfiction.kr/"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Original</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabContent" id="vogue">
+              <div class="projectWrapper">
+                <div class="projectImg">
+                  <img src="img/vogue_main.jpg" />
+                </div>
+                <div class="projectInfo">
+                  <ul class="projectDesc">
+                    <li>• 리디자인 프로젝트입니다.</li>
+                    <li>
+                      • 에디토리얼 스타일을 기반으로 레이아웃을 새롭게
+                      설계했습니다.
+                    </li>
+                    <li>
+                      • 이미지 중심 배치와 정보 구조화를 통해 시각적 흐름을
+                      강화했습니다.
+                    </li>
+                  </ul>
+                  <div class="btnGroup">
+                    <a
+                      href="https://kimmin-dot.github.io/vogue/"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Website</a
+                    >
+                    <a href="https://www.figma.com/design/ziPVwslUYRH15aRhR6vMk7/vogue?node-id=0-1&p=f&t=Nbat90mPIfeuwVdh-0" class="viewBtn" target="_blank"
+                      >View Figma</a
+                    >
+                    <a
+                      href="https://www.vogue.co.kr/"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Original</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tabContent" id="retro">
+              <div class="projectWrapper">
+                <div class="projectImg">
+                  <img src="img/retro_main.png" />
+                </div>
+                <div class="projectInfo">
+                  <ul class="projectDesc">
+                    <li>• 팀 프로젝트입니다.</li>
+                    <li>• 레트로 무드 & 픽셀 기반 UI 디자인을 제작했습니다.</li>
+                    <li>• Music Control / Image Switch 구현</li>
+                  </ul>
+                  <div class="btnGroup">
+                    <a
+                      href="https://hangw1231.github.io/project-retro/"
+                      class="viewBtn"
+                      target="_blank"
+                      >View Website</a
+                    >
+                    <a href="https://www.figma.com/design/BwjcW4Q0xYRKWoKDkno2nb/%EB%A0%88%ED%8A%B8%EB%A1%9C?node-id=120-61&p=f&t=c3OvjYZ9vdKIcQB2-0" class="viewBtn" target="_blank"
+                      >View Figma</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Finder Modal -->
+
+    <div id="profile-modal" class="profileModal">
+      <div class="profileWindow">
+        <div class="profileHeader">
+          <span class="red" onclick="closeProfile()"></span>
+          <div class="profileTitle">
+            <h3>Kim min</h3>
+            <p>designer / publisher</p>
+          </div>
+          <button class="editBtn">Edit</button>
+        </div>
+        <div class="profileImg">
+          <img src="img/profile.png" alt="profile image" />
+        </div>
+        <div class="profileDesc">
+          ✦ 새로운 것을 빠르게 익히고 적용하는 편입니다. <br />
+          ✦ 디자인과 퍼블리싱 모두에 관심을 가지고 있습니다. <br />
+          ✦ 꾸준히 배우며 더 좋은 작업을 만들고자 합니다!
+        </div>
+        <div class="profileLinks">
+          <h4>Links</h4>
+          <a href="https://github.com/kimmin-dot" target="_blank">👩‍💻 Github</a>
+          <a href="https://www.instagram.com/automnedemer/" target="_blank"
+            >📷 Instagram</a
+          >
+        </div>
+        <div class="profileBtns">
+          <button><img src="img/icons/ion_share.png" alt="" /></button>
+          <button><img src="img/icons/light_heart.png" alt="" /></button>
+        </div>
+      </div>
+    </div>
+    <!-- profile modal -->
+
+    <div id="image-modal" class="imageModal">
+      <div class="imageWindow">
+        <div class="imageHeader">
+          <div class="macBtns">
+            <span class="red" onclick="closeImageModal()"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <p>My Works</p>
+        </div>
+        <div class="imageBody">
+          <div class="imagePreview">
+            <img id="main-preview" src="img/img_p1.png" />
+          </div>
+          <div class="thumbBar">
+            <div class="thumbRow">
+              <img
+                src="img/img_p1.png"
+                class="thumbImg"
+                data-full="img/img_p1.png"
+              />
+              <img
+                src="img/img_p2.png"
+                class="thumbImg"
+                data-full="img/img_p2.png"
+              />
+              <img
+                src="img/img_p3.png"
+                class="thumbImg"
+                data-full="img/img_p3.png"
+              />
+              <img
+                src="img/img_p4.webp"
+                class="thumbImg"
+                data-full="img/img_p4.webp"
+              />
+              <img
+                src="img/img_p5.webp"
+                class="thumbImg"
+                data-full="img/img_p5.webp"
+              />
+            </div>
+          </div>
+          <button class="cameraBtn">
+            <img src="img/icons/camera.png" alt="camera" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- image modal -->
+
+    <footer class="dock">
+      <ul class="dockLeft">
+        <li>
+          <button class="dockBtn" onclick="openFinder()">
+            <img src="img/icons/finder.webp" alt="Finder" />
+          </button>
+        </li>
+        <li>
+          <button class="dockBtn">
+            <a href="https://spangle-bear-31f.notion.site/Min-s-Portfolio-2c0a7e49094080ca9996d7dede79c3c4?source=copy_link" target="_blank"><img src="img/icons/notion_icon.png" alt="Notion" /></a>
+          </button>
+        </li>
+        <li>
+          <button class="dockBtn" onclick="openImageModal()">
+            <img src="img/icons/img.png" alt="Image" />
+          </button>
+        </li>
+      </ul>
+      <div class="dockDivider"></div>
+      <div class="dockProfile">
+        <button class="dockBtn" onclick="openProfile()">
+          <img src="img/profile.png" alt="profile" />
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
