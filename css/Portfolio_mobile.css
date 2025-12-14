@@ -126,6 +126,9 @@
   .projectInfo .desc {
     font-size: 13px;
   }
+  .projectDesc li {
+    display: none;
+  }
   .btnGroup {
     text-align: center;
     position: static;
@@ -178,6 +181,7 @@
   .finderWindow,
   .imageWindow {
     width: 80%;
+    height: 50vh;
     transform: translateY(0);
     border-radius: 16px;
   }
