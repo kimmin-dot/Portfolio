@@ -1,0 +1,260 @@
+/* pad */
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+    background-attachment: scroll;
+  }
+  /* ===== Header ===== */
+  header {
+    padding: 0 14px;
+    height: 46px;
+  }
+  .menuLeft,
+  .menuRight {
+    gap: 10px;
+  }
+  .menuLeft span:not(.pro):not(.por) {
+    display: none;
+  }
+  .menuLeft .pro {
+    height: 30px;
+  }
+  .menuLeft span,
+  #dateTime {
+    font-size: 13px;
+  }
+  .menuRight > span,
+  .menuRight .battery {
+    display: none;
+  }
+  main span:nth-child(1) {
+    font-size: 30px;
+    top: 10%;
+    right: 6%;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.9);
+  }
+  main span:nth-child(2) {
+    font-size: 52px;
+    bottom: 10%;
+    left: 6%;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.9);
+  }
+
+  /* ===== Note (skill note) ===== */
+  .note {
+    top: 20%;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+  .noteCont {
+    padding: 14px;
+  }
+  .noteCont img {
+    height: 26px;
+    margin-right: 8px;
+  }
+
+  /* ===== Dock ===== */
+  footer.dock {
+    bottom: 16px;
+    padding: 10px 14px;
+    border-radius: 20px;
+    gap: 16px;
+  }
+  .dockLeft {
+    gap: 10px;
+  }
+  .dockBtn {
+    padding: 4px;
+  }
+  .dockBtn img,
+  .dockProfile img {
+    height: 40px;
+    border-radius: 12px;
+  }
+  .dockDivider {
+    height: 30px;
+  }
+  footer.dock::before {
+    display: none;
+  }
+
+  /* ===== Finder Modal / Profile Modal / Image Modal (공통) ===== */
+  .finderWindow,
+  .imageWindow,
+  .profileWindow {
+    max-width: 680px;
+    max-height: 65vh;
+    transform: translateY(-20px);
+  }
+  .finderBody {
+    flex-direction: column;
+  }
+  .finderSidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+  .finderSidebar h4 {
+    display: none;
+  }
+  .finderSidebar button {
+    width: auto;
+    flex: 0 0 auto;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .finderSidebar button img {
+    height: 16px;
+  }
+  .finderContent {
+    padding: 14px 14px 18px;
+    overflow: auto;
+  }
+  .projectPreview img {
+    border-radius: 12px;
+  }
+  .projectInfo {
+    padding: 14px;
+  }
+  .projectInfo .desc {
+    font-size: 13px;
+  }
+  .btnGroup {
+    text-align: center;
+    position: static;
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+  }
+  .viewBtn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 14px;
+  }
+  .thumbImg {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+/* mobile */
+@media (max-width: 490px) {
+  /* ===== Header ===== */
+  header {
+    padding: 0 12px;
+    height: 44px;
+  }
+  .menuLeft .por {
+    font-size: 14px;
+  }
+  #dateTime {
+    font-size: 12px;
+  }
+
+  /* ===== Main Text ===== */
+  main span:nth-child(1) {
+    font-size: 22px;
+    top: 12%;
+    right: 6%;
+  }
+  main span:nth-child(2) {
+    font-size: 38px;
+    bottom: 12%;
+    left: 6%;
+  }
+
+  /* ===== Skill Note ===== */
+  .note {
+    left: 30%;
+  }
+
+  .finderWindow,
+  .imageWindow {
+    width: 80%;
+    max-height: 65vh;
+    transform: translateY(0);
+    border-radius: 16px;
+  }
+  .profileWindow {
+    width: 70%;
+  }
+  .finderHeader,
+  .imageHeader,
+  .profileHeader {
+    height: 42px;
+    padding: 6px 12px;
+  }
+
+  /* ===== Finder Modal ===== */
+  .finderSidebar {
+    padding: 10px;
+    gap: 6px;
+    justify-content: center;
+  }
+  .finderSidebar button {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+  .finderContent {
+    padding: 10px;
+  }
+  .projectPreview img {
+    width: 100%;
+    height: auto;
+  }
+  .projectInfo {
+    padding: 12px;
+  }
+  .projectInfo .desc {
+    font-size: 12px;
+  }
+  .btnGroup {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .viewBtn {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+  }
+
+  /* ===== Image Modal ===== */
+  .imageBody {
+    flex-direction: column;
+    padding: 30px 60px;
+  }
+  .thumbBar {display: none;}
+  .thumbGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+  .thumbImg {
+    width: 100%;
+    height: auto;
+  }
+  .imagePreview img {
+    max-height: 55vh;
+    object-fit: contain;
+  }
+  .cameraBtn {display: none;}
+
+  /* ===== Profile Modal ===== */
+  .profileBody {
+    padding: 14px;
+  }
+  .profileBody p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .profileDesc {
+    padding: 9px;
+  }
+}

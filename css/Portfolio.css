@@ -235,7 +235,7 @@ main span:nth-child(2) {
 }
 .finderContent {
   flex: 1;
-  padding: 20px 50px;
+  padding: 0px 50px;
   display: flex;
 }
 .tabContent {
@@ -246,7 +246,6 @@ main span:nth-child(2) {
   align-items: center;
   gap: 30px;
 }
-.projectImg {margin-bottom: 1rem;}
 .projectImg img {
   width: 100%;
   border-radius: 15px;
@@ -258,7 +257,7 @@ main span:nth-child(2) {
 .projectInfo {
   background: rgba(255,255,255,0.6);
   backdrop-filter: blur(16px);
-  padding: 24px;
+  padding: 12px;
   border-radius: 15px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   display: flex;
@@ -271,16 +270,17 @@ main span:nth-child(2) {
 }
 .projectDesc li {
   margin-bottom: 5px;
+  font-size: 15px;
 }
 .btnGroup {
   display: flex;
   gap: 10px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 .viewBtn {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 300;
-  padding: 10px 25px;
+  padding: 7px 15px;
   border-radius: 10px;
   background: #fff;
   border: 1px solid rgba(0,0,0,0.2);
@@ -311,7 +311,7 @@ main span:nth-child(2) {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  transform: translateY(-40px);
+  transform: translateY(-35px);
 }
 .profileHeader {
   height: 48px;
@@ -332,7 +332,7 @@ main span:nth-child(2) {
 .profileTitle p { font-size: 12px; opacity: 0.6; margin-top: -2px; }
 .profileImg img {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: contain;
 }
 .profileDesc {
@@ -425,7 +425,7 @@ main span:nth-child(2) {
   flex-direction: column;
 }
 .imagePreview {
-  height: 380px;
+  height: 300px;
   flex: none;
   display: flex;
   justify-content: center;
@@ -440,10 +440,11 @@ main span:nth-child(2) {
 }
 .thumbBar {
   width: 100%;
-  height: 100px;
-  flex: none;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fff;
-  padding: 8px 0 0;
   overflow: hidden;
 }
 .thumbBar:hover {
