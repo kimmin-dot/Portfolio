@@ -178,10 +178,15 @@
     left: 33%;
   }
 
-  .finderWindow,
-  .imageWindow {
+  .finderWindow {
     width: 80%;
     height: 60vh;
+    transform: translateY(0);
+    border-radius: 16px;
+  }
+  .imageWindow {
+    width: 80%;
+    height: auto;
     transform: translateY(0);
     border-radius: 16px;
   }
