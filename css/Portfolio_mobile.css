@@ -181,7 +181,7 @@
   .finderWindow,
   .imageWindow {
     width: 80%;
-    height: 50vh;
+    height: 60vh;
     transform: translateY(0);
     border-radius: 16px;
   }
